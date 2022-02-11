@@ -1,0 +1,115 @@
+header {
+  width: 1190px;
+  height: 50px;
+  margin: 0 auto;
+  padding: 22px 0;
+  margin-bottom: 22px;
+}
+header > div > img {
+  width: 190px;
+}
+main {
+  width: 100%;
+  background-color: #dd2726;
+}
+main > .center {
+  width: 1190px;
+  margin: 0 auto;
+  position: relative;
+}
+main > .center > a {
+  width: 600px;
+  height: 500px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+main > .center > .login {
+  width: 350px;
+  min-height: 350px;
+  background: white;
+  position: absolute;
+  top: 80px;
+  right: 70px;
+}
+main > .center > .login > .triangle {
+  width: 0;
+  height: 0;
+  border-bottom: white 28px solid;
+  border-left: white 28px solid;
+  border-right: transparent 28px solid;
+  border-top: transparent 28px solid;
+  position: absolute;
+  right: 3px;
+  top: 5px;
+  z-index: 2;
+}
+main > .center > .login > .icon-erweima {
+  position: absolute;
+  right: 5px;
+  top: -5px;
+  font-size: 52px;
+  color: #ff0036;
+}
+main > .center > .login > .sweep {
+  border: 1px solid #f3d995;
+  background: #fefcee;
+  color: #ff9000;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 5px 10px;
+  width: 106px;
+  height: 28px;
+  position: absolute;
+  top: 10px;
+  right: 57px;
+  z-index: 3;
+}
+main > .center > .login > .rotate {
+  width: 6px;
+  height: 6px;
+  background: #fefcee;
+  border-top: #f3d995 1px solid;
+  border-right: #f3d995 1px solid;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 21px;
+  right: 54px;
+  z-index: 4;
+}
+footer {
+  width: 100%;
+  background: #fff;
+}
+footer > .foot {
+  width: 1190px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+footer > .foot > .p1 {
+  line-height: 25px;
+  font-size: 12px;
+}
+footer > .foot > .p1 > a {
+  color: #000;
+  margin-right: 3px;
+}
+footer > .foot > .p2 {
+  line-height: 25px;
+  font-size: 12px;
+}
+footer > .foot > .p2 > a {
+  color: #000;
+  margin-right: 3px;
+}
+footer > .foot > .d1 > span {
+  color: #666;
+  line-height: 20px;
+  font-size: 12px;
+}
+footer > .foot > .d1 > a {
+  color: #999;
+  line-height: 20px;
+  font-size: 12px;
+}

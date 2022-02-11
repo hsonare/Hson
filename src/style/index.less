@@ -1,0 +1,852 @@
+// top
+.top {
+    width: 100%;
+    height: 26px;
+    background: #f2f2f2;
+
+    >div {
+        // display: flex;
+        // justify-content: space-between;
+        // align-items: center;
+        position: relative;
+
+        >p {
+            line-height: 26px;
+        }
+    }
+
+    >div>p>a {
+        color: #999;
+        font-size: 12px;
+        line-height: 26px;
+    }
+
+    >div>p>em {
+        color: #999;
+        font-size: 12px;
+        line-height: 26px;
+        margin-left: 20px;
+    }
+
+    >div>ul {
+        // float: left;
+        // background: rosybrown;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        >.my {
+            position: relative;
+            height: 26px;
+            padding: 0 5px 0 10px;
+
+        }
+
+        >li {
+            float: left;
+            margin-right: 20px;
+
+            >a {
+                font-size: 12px;
+                color: #999;
+            }
+
+            >i {
+                font-size: 5px;
+                color: #999;
+            }
+
+            >.second {
+                padding: 8px 10px;
+                background: white;
+                position: absolute;
+                top: 26px;
+                left: 0px;
+                width: 96px;
+                line-height: 1.4;
+                display: none;
+
+                >a {
+                    font-size: 12px;
+                    color: #999;
+                    line-height: 20px;
+                }
+
+            }
+
+        }
+
+        >.phone {
+            position: relative;
+
+            >.glyphicon-triangle-top {
+                position: absolute;
+                top: 16px;
+                left: 22px;
+                color: white;
+                display: none;
+                z-index: 2;
+            }
+
+            .QR-code {
+                position: absolute;
+                top: 24px;
+                left: -60px;
+                box-shadow: 0 0 5px black;
+                display: none;
+                z-index: 1;
+            }
+        }
+
+        >.phone:hover>.glyphicon-triangle-top {
+            display: block
+        }
+
+        >.phone:hover>.QR-code {
+            display: block
+        }
+
+        .merchant:hover {
+            background: white;
+        }
+
+        .merchant:hover .glyphicon-triangle-bottom {
+            transform: rotate(180deg);
+            transition: 0.3s;
+
+        }
+
+        .merchant:hover div {
+            display: block;
+        }
+
+        .merchant {
+            position: relative;
+            padding: 0 5px 0 10px;
+            height: 26px;
+
+
+            >div {
+                width: 122px;
+                background: white;
+                padding: 8px 10px;
+                position: absolute;
+                top: 26px;
+                right: 0;
+                display: none;
+
+                >ul>li {
+                    border-bottom: 1px #666 dashed;
+                    padding: 8px 0;
+
+                    >h3 {
+                        color: #666;
+                        font-weight: bold;
+                        font-size: 12px;
+                    }
+
+                    >a {
+                        color: #999;
+                        font-size: 12px;
+                    }
+
+                    >a:hover {
+                        color: red;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.top a:hover {
+    color: red;
+}
+
+.top>div>ul>.my:hover {
+    background-color: white;
+
+    >.second {
+        display: block;
+    }
+
+    // >.glyphicon-triangle-top{
+    //     display: inline;
+    // }
+    // >.glyphicon-triangle-bottom{
+    //     display: none;
+    // }
+    .glyphicon-triangle-bottom {
+        transform: rotate(180deg);
+        transition: 0.3s;
+
+    }
+}
+
+.top>div>ul>.my>.second>a:hover {
+    color: red;
+}
+
+// top2
+.top2 {
+    width: 100%;
+    height: 129px;
+    background: rgb(220, 38, 9);
+
+    >.box {
+        width: 1190px;
+        margin: 0 auto;
+        padding-top: 20px;
+
+        >a {
+            >img {
+                float: left;
+            }
+        }
+    }
+}
+
+// main 
+main {
+    width: 100%;
+    // height: 900px;
+    background: #faf2f2;
+
+    >.center {
+        width: 1190px;
+        margin: 0 auto;
+        overflow: hidden;
+
+        // 搜索
+        >.search {
+            // margin-top: 30px;
+            height: 141px;
+            display: flex;
+            align-items: center;
+
+            >.logo {
+                width: 87px;
+                height: 53px;
+                margin: 0 80px;
+
+                >img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            >.search1 {
+                position: relative;
+
+                >input {
+                    width: 590px;
+                    height: 42px;
+                    border-radius: 20px;
+                    font-size: 12px;
+                    padding-left: 16px;
+                    border: 1px red solid;
+                }
+
+                >a {
+                    display: block;
+                    width: 90px;
+                    height: 42px;
+                    border-radius: 20px;
+                    font-size: 18px;
+                    background: red;
+                    color: white;
+                    text-align: center;
+                    line-height: 42px;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        >.round-main {
+            width: 100%;
+            height: 600px;
+            background: white;
+            border-top-left-radius: 18px;
+            border-top-right-radius: 18px;
+            padding: 15px 11px;
+            position: relative;
+
+            // 主题市场横条
+            >.box1 {
+                display: flex;
+
+                >h2 {
+                    font-weight: bold;
+                    color: red;
+                    width: 20%;
+                    margin-top: 5px;
+                }
+
+                >.timi {
+                    width: 80%;
+
+                    >img {
+                        width: 100px;
+                        height: 30px;
+                        margin-top: 1px;
+                        margin-right: 16px;
+                    }
+
+                    >a {
+                        font-size: 14px;
+                        color: black;
+                        margin-right: 16px;
+                    }
+
+                    >a:hover {
+                        color: red;
+                    }
+                }
+            }
+
+            // 左侧分类
+            >ul {
+                width: 212px;
+                float: left;
+
+                >li {
+                    color: #666;
+                    font-size: 14px;
+                    line-height: 32px;
+                    height: 32px;
+
+                    >i {
+                        font-size: 12px;
+                        margin-right: 13px;
+                    }
+
+                    >a {
+                        color: #666;
+                        font-size: 13px;
+                        text-decoration: none;
+                    }
+
+                    >a:hover {
+                        color: red;
+                    }
+                }
+            }
+
+            // 上banner
+            >.banner {
+                float: left;
+                width: 520px;
+                height: 280px;
+                // background: #666;
+                margin-left: 23px;
+                margin-top: 14px;
+                border-radius: 12px;
+                position: relative;
+            }
+
+            // 下banner
+            >.banner1 {
+                width: 520px;
+                height: 206px;
+                // background: rosybrown;
+                border-radius: 12px;
+                float: left;
+                margin: 20px 0 0 23px;
+                position: relative;
+            }
+
+            // 右侧登录栏
+            >.log {
+                width: 384px;
+                height: 508px;
+                background: #f3f3f3;
+                position: absolute;
+                top: 60px;
+                right: 20px;
+                border-radius: 12px;
+
+                >a {
+                    display: block;
+                    width: 150px;
+                    height: 106px;
+                    margin: 20px auto 0;
+
+                    >img {
+                        width: 80px;
+                        height: 80px;
+                        display: block;
+                        border-radius: 50%;
+                        margin: 0 auto;
+                    }
+
+                    >p {
+                        color: #333;
+                        font-size: 12px;
+                        line-height: 16px;
+                        text-align: center;
+                        margin-top: 10px;
+                    }
+                }
+
+                >.box-log {
+                    width: 356px;
+                    height: 141px;
+                    margin: 17px 0 0 14px;
+
+                    >a {
+                        >img {
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 12px;
+                        }
+                    }
+                }
+
+                >.announcement {
+                    margin: 27px 0 0 14px;
+
+                    >div {
+                        >em {
+                            font-size: 14px;
+                            font-weight: 700;
+                            color: #000;
+                            line-height: 16px;
+                        }
+
+                        >b {
+                            color: #666;
+                            font-size: 14px;
+                            line-height: 14px;
+
+                        }
+
+                        >a {
+                            text-decoration: none;
+
+                            >i {
+                                background-color: rgba(255, 174, 174, .2);
+                                color: #fe0137;
+                                font-size: 12px;
+                                padding: 3px 4px;
+                                border-radius: 2px;
+                                margin-right: 4px;
+                            }
+
+                            >span {
+                                color: #666;
+                                font-size: 12px;
+                                line-height: 12px;
+                            }
+                        }
+                    }
+
+                }
+
+                >.collect {
+                    width: 100%;
+                    height: 51px;
+                    display: flex;
+                    justify-content: center;
+                    padding: 0 20px;
+                    margin-top: 20px;
+
+                    >a {
+                        display: block;
+                        margin-right: 34px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+
+                        >i {
+                            font-size: 23px;
+                            color: #333;
+                            display: block;
+                            // margin: 0 auto;
+                        }
+
+                        >p {
+                            font-size: 12px;
+                            color: #333;
+                        }
+                    }
+                }
+            }
+        }
+
+        // 天猫超市等
+        >.bottom-main {
+            width: 100%;
+            height: 2200px;
+            background: white;
+            border-bottom-left-radius: 18px;
+            border-bottom-right-radius: 18px;
+            padding: 0px 11px;
+            overflow: hidden;
+            margin-bottom: 50px;
+            >.small-banner {
+                height: 90px;
+
+                >a {
+                    float: left;
+                    margin-right: 7px;
+
+                    >img {
+                        width: 228px;
+                        height: 88px;
+                        border-radius: 12px;
+                    }
+                }
+            }
+
+            // 天猫超市
+            >.supermarket {
+                margin: 18px 0;
+
+                // overflow: hidden;
+                >.tmall-1 {
+                    margin-bottom: 18px;
+
+                    >img {
+                        width: 107px;
+                        height: 34px;
+                    }
+                }
+
+                >.supermarket-commodity {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+
+                    >div {
+                        margin-right: 12px;
+                        margin-bottom: 20px;
+
+                        >a {
+                            text-decoration: none;
+
+                            >img {
+                                width: 220px;
+                                height: 220px;
+                                border-radius: 18px;
+                            }
+
+                            >p {
+                                width: 208px;
+                                overflow: hidden;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                                color: #333;
+                                margin-top: 11px;
+                                font-size: 16px;
+                                font-weight: 500;
+                                height: 22px;
+                                line-height: 22px;
+                            }
+
+                            >span {
+                                display: block;
+                                margin-top: 5px;
+                                font-size: 20px;
+                                line-height: 24px;
+                                // height: 24px;
+                                color: #ff5000;
+                            }
+                        }
+                    }
+                }
+            }
+
+            // 天猫国际
+            >.internationality {
+                >.tmall-2 {
+                    margin-bottom: 18px;
+
+                    >img {
+                        width: 107px;
+                        height: 34px;
+                    }
+                }
+
+                >.internationality-commodity {
+                    height: 680px;
+
+                    // 国际下方商品左栏
+                    >.internationality-left {
+                        float: left;
+
+                        >div {
+                            position: relative;
+
+                            >img {
+                                width: 222px;
+                                height: 302px;
+                                border-radius: 18px;
+                            }
+
+                            >.positioning-word {
+                                width: 190px;
+                                height: 72px;
+                                background-color: rgba(0, 0, 0, .8);
+                                border-radius: 0 4px 4px 0;
+                                position: absolute;
+                                left: 0;
+                                bottom: 26px;
+                                display: flex;
+
+                                >.positioning-word1 {
+                                    margin: 14px 0 0 12px;
+                                    width: 36px;
+                                    height: 50px;
+                                    color: #fff;
+                                    font-size: 18px;
+                                    line-height: 25px;
+                                    font-family: '宋体';
+                                }
+
+                                >.positioning-word2 {
+                                    margin: 16px 20px 0;
+                                    height: 41px;
+                                    width: 1px;
+                                    background-color: hsla(0, 0%, 59.2%, .4);
+                                }
+
+                                >.positioning-word3 {
+                                    >p {
+                                        margin-top: 13px;
+                                        font-size: 18px;
+                                        font-weight: 500;
+                                        color: #fff;
+                                        line-height: 25px;
+                                        width: 72px;
+                                        height: 25px;
+                                        font-family: '宋体';
+                                    }
+
+                                    >span {
+                                        font-size: 14px;
+                                        color: #fff;
+                                        line-height: 20px;
+                                        width: 56px;
+                                        height: 20px;
+                                        font-family: '宋体';
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    // 国际下方商品右栏
+                    >.internationality-right {
+                        width: 937px;
+                        height: 600px;
+                        // background: #ff5000;
+                        float: right;
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+
+                        >div {
+                            // border: 1px solid black;
+                            margin-right: 8px;
+                            margin-bottom: 39px;
+
+                            >a {
+                                text-decoration: none;
+
+                                >img {
+                                    width: 220px;
+                                    height: 220px;
+                                    border-radius: 18px;
+                                }
+
+                                >p {
+                                    width: 208px;
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                    color: #333;
+                                    margin-top: 11px;
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                    height: 22px;
+                                    line-height: 22px;
+                                }
+
+                                >span {
+                                    display: block;
+                                    margin-top: 5px;
+                                    font-size: 20px;
+                                    line-height: 24px;
+                                    // height: 24px;
+                                    color: #ff5000;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+            // 猜你喜欢
+            >.you-maby-love {
+                width: 100%;
+                height: 1200px;
+
+                // background: #ff5000;
+                >.recommend-box {
+                    >span {
+                        font-size: 24px;
+                        line-height: 24px;
+                        font-weight: 700;
+                    }
+
+                    >em {
+                        display: inline-block;
+                        margin: 2px 0 0 6px;
+                        width: 68px;
+                        height: 20px;
+                        border-radius: 20px;
+                        background-color: #fe0137;
+                        text-align: center;
+                        font-size: 12px;
+                        color: white;
+                        line-height: 20px;
+                    }
+                }
+
+                >.love-show{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                    >div {
+                        margin-bottom: 20px;
+                        a {
+                            >img {
+                                width: 220px;
+                                height: 220px;
+                                border-radius: 18px;
+                            }
+
+                            >p {
+                                margin: 11px 0 0 6px;
+                                width: 208px;
+                                height: 44px;
+                                overflow: hidden;
+                                color: #000;
+                                font-size: 16px;
+                                line-height: 22px;
+                            }
+
+                            >span {
+                                margin: 5px 0 0 6px;
+                                font-size: 20px;
+                                line-height: 24px;
+                                color: #ff5000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// footer
+footer{
+    width: 100%;
+    border-top: 1px solid #D1D7DC;
+    // height: 50px;
+    >.foottop{
+        width: 1190px;
+        height: 100px;
+        background: url(http://img.alicdn.com/tfs/TB14dANRXXXXXbdXXXXXXXXXXXX-1190-100.jpg) no-repeat;
+        margin: 25px auto;
+        >a{
+            float: left;
+            display: block;
+            width: 297px;
+            height: 100px;
+        }
+    }
+    .footmain{
+        width: 1190px;
+        padding-top: 22px;
+        height: 190px;
+        margin: auto;
+        border-top: 1px solid #ededed;
+        background: url(data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAAAZCAMAAAC/3XipAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABdFBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDAxZWVmhoaG/v7+7u7u3t7eFhYU0NDQBAQFmZmbo6Oj////w8PAtLS2NjY24uLgnJycDAwOmpqZvb2/b29v09PRFRUVubm6np6cEBASXl5f29vZzc3MxMTEwMDB0dHSZmZk/Pz/Nzc0CAgIoKChAQEDDw8OAgIDv7+9TU1N/f38aGhr+/v5aWlrLy8uoqKhSUlJBQUGxsbHi4uLg4OBqamo3Nzf6+voiIiI2NjZjY2M8PDysrKzz8/P39/cFBQXy8vKtra07OztkZGRERERGRka2trbU1NRgYGBhYWHT09MJCQllZWXV1dV4eHh6enr19fWcnJyRkZEGBgYuLi4HBwd24IQCAAAAJXRSTlMAA2PD7um8WQEKurKksbCPMGaA+kA+tewkzd4c3d/iL+D5lU03tZLoQgAAAAFiS0dEMdnbHXIAAAHWSURBVDjLrZH5OwJRFIYnUrKWnQjVFSblVtYiS0j2fc2+72T3z7vnaOpOJmY8zi+955y+d+7MFQRdTq4+z2DMF7RWvtGQp8/N0TE0FRCsQpNGh6nwK1jAgkUkWcU6TQ5diRQsEgSSqlJNktJ00MxJiEWDw8LlynhJeYVqR2U5l6viJaS6RqWjppqP1cokpM6qymGtl6Ua5BJia1ThaLTJQ00ZEtJsdzjNP5XTYW8mv0j+Uv8uaXG1trWL7o5fIh1usb2t1dWiJPF4O6nPTwKUdnX/oOgWKQ0Qv492ej3fJD29lNI+9ttPaTCU1REKUtrfQ8gA+/dgOFMyxKbDcMQRgNEsjsgw247BqwOMZ0gm2IyKeF6g6KSiwxOFZQxQBJqSS6ZhNoM4CzinKJmDlQ9xHnBaJllYhNkS8jLgiqJkBVbLiC5AusBLVnG0hrwOuKEo2YTVOuIaJlZ5yRaOtpEHAeNSbicSiexITTx9yF1MbPGSPRztIx8AHiZj4SPWHB0nuxNYnSKeYeKcl1zg6BL5CvBaevgNa26l5i51h+QSExe85D4IowfkBGAg9R0e6VOKA7BKID4APt/LrvgFZq9Ab/Dii+/prxlLox8uMf4B+AqBl+QVfwLVX9WAqgikVgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNy0wMi0yMFQwOTo0NjoxNCswODowMHgr8vYAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTctMDItMjBUMDk6NDY6MTQrMDg6MDAJdkpKAAAAAElFTkSuQmCC) no-repeat 45px bottom;
+        display: flex;
+        justify-content:space-between;
+        >dl{
+            >dt{
+                color: #646464;
+                font-size: 16px;
+                font-weight: 700;
+                height: 30px;
+                line-height: 30px;
+            }
+            >dd{
+                font-size: 12px;
+                color: #646464;
+                line-height: 20px;
+            }
+            >div{
+                img{
+                    width: 105px;
+                    height: 105px;
+                }
+            }
+        }
+    }
+}
+// foot1
+.foot1{
+    border-top: 2px solid #FF0036;
+    background: #000;
+    text-align: left;
+    min-height: 177px;
+    >.p1{
+        width: 1190px;
+        margin: 0 auto;
+        line-height: 25px;
+        >a{
+            margin-right: 3px;
+            color: #fff;
+            font-size: 12px;
+        }
+    }
+    >.p2{
+        width: 1190px;
+        margin: 0 auto;
+        color: #fff;
+        line-height: 25px;
+        padding: 5px 0;
+        >a{
+            margin-right: 3px;
+            color: #fff;
+            font-size: 12px;
+
+        }
+
+    }
+    >.d1{
+        width: 1190px;
+        margin: 0 auto;
+        color: #a4a4a4;
+        line-height: 20px;
+        font-size: 12px;
+    }
+    >.d2{
+        padding-bottom: 20px;
+
+        >img{
+            width: 146px;
+            height: 71px;
+            display: block;
+            margin: 0 auto;
+            background: white;
+        }
+    }
+}
