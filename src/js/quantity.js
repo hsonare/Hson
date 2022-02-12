@@ -6,7 +6,12 @@ window.onload = function(){
     let way = document.querySelector('.way');
     let wayf = document.querySelector('.way-father');
     let move = document.querySelector('.move1');
-
+    let act = document.querySelector('.act');
+    let li = act.querySelectorAll('li');
+    let content = document.querySelector('.goodcontent');
+    let evaluation = document.querySelector('.goodEvaluation');
+    let aftersales = document.querySelector('.goodAftersales');
+    var toggle = document.querySelectorAll('.toggle');
 
 
     //购物车加减
@@ -58,5 +63,43 @@ window.onload = function(){
             move.style.transform = 'rotate(0deg)';
         }
     }
+
+
+
+
+    //商品详情处点击效果
+    li.forEach(function(val){
+        // console.log(val);
+        val.onclick = function(){
+            for(let i = 0;i < act.children.length ; i++){
+                act.children[i].className = '';
+            }
+            this.className = 'active';
+            // console.log(toggle.children);
+            toggle.forEach(va=>{
+                console.log(va.children[1,2]);
+                if(this == li[0]){
+                    va.children[1].style.display = 'block';
+                    va.children[2].style.display = 'block';
+                    va.children[0].style.display = 'block';
+                }else if(this == li[1]){
+                    va.children[2].style.display = 'none';
+                    va.children[0].style.display = 'none';
+                    va.children[1].style.display = 'block';
+                }else if(this == li[2]){
+                    va.children[0].style.display = 'none';
+                    va.children[1].style.display = 'none';
+                    va.children[2].style.display = 'block';
+                }
+            });
+            
+            
+        }
+    });
+    // console.log(toggle);
+    // toggle.forEach(function(va){
+    //             console.log(va);
+    //         })
+    
 };
 
