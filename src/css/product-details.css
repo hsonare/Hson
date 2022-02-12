@@ -650,6 +650,7 @@ main > .buy {
   margin-left: 20px;
   padding: 0 37px;
   border-right: #999 solid 1px;
+  position: relative;
 }
 main > .buy > .h1h1 > h1 {
   font-size: 16px;
@@ -895,10 +896,10 @@ main > .buy > .delivery > span {
   color: #999;
 }
 main > .buy > .way {
-  position: relative;
+  position: absolute;
   font-size: 12px;
-  top: -24px;
-  left: 412px;
+  top: 400px;
+  left: 463px;
   z-index: 1;
   cursor: pointer;
 }
@@ -906,11 +907,11 @@ main > .buy > .way i {
   font-size: 10px;
 }
 main > .buy > .way-father {
-  position: relative;
+  position: absolute;
   background-color: #fff;
   width: 165px;
-  right: -284px;
-  top: -45px;
+  right: 11px;
+  top: 391px;
   padding: 2em 1em 1em;
   border: 1px solid #e2e2e4;
   height: 36px;
@@ -926,12 +927,10 @@ main > .buy > .way-father > span i {
 }
 .main2 {
   width: 1190px;
-  height: 500px;
   margin: 0 auto;
 }
 .main2 .center-1 {
   width: 790px;
-  height: 1000px;
   margin: 0 auto;
 }
 .main2 .center-1 > ul {
@@ -1034,7 +1033,6 @@ main > .buy > .way-father > span i {
 }
 .main2 .center-1 > .toggle > .goodEvaluation {
   width: 100%;
-  height: 500px;
 }
 .main2 .center-1 > .toggle > .goodEvaluation > h4 {
   height: 30px;
@@ -1044,6 +1042,7 @@ main > .buy > .way-father > span i {
   color: #fff;
   font-weight: 400;
   font-size: 12px;
+  text-align: left;
 }
 .main2 .center-1 > .toggle > .goodEvaluation > .fraction {
   border: 1px solid #c8c8c8;
@@ -1123,13 +1122,288 @@ main > .buy > .way-father > span i {
   border: 1px solid #ffd7dd;
   white-space: nowrap;
   font-size: 12px;
+  text-decoration: none;
+}
+.main2 .center-1 > .toggle > .goodEvaluation > .fraction > .fraction2 > .fraction2-right > span a:hover {
+  background: #ffe2e2;
+  border-color: #ff0036;
+  color: #ff0036;
 }
 .main2 .center-1 > .toggle > .goodEvaluation > .fraction > .fraction2 > .fraction2-right > .low a {
   color: #409280;
+  text-decoration: none;
   border: 1px solid #d3f4e4;
+}
+.main2 .center-1 > .toggle > .goodEvaluation > .fraction > .fraction2 > .fraction2-right > .low a:hover {
+  text-decoration: none;
+  background: #d9f5ed;
+  border-color: #409280;
+}
+.main2 .center-1 > .toggle > .goodEvaluation > .select-comment {
+  background: #EFEFEF;
+  border: 1px solid #c8c8c8;
+  height: 24px;
+  line-height: 24px;
+  padding: 5px 10px;
+  box-sizing: content-box;
+}
+.main2 .center-1 > .toggle > .goodEvaluation > .select-comment > .select-comment1 {
+  float: left;
+  padding-left: 2px;
+}
+.main2 .center-1 > .toggle > .goodEvaluation > .select-comment > .select-comment1 input {
+  margin-right: 3px;
+  line-height: 24px;
+  margin-top: 0;
+}
+.main2 .center-1 > .toggle > .goodEvaluation > .select-comment > .select-comment1 em {
+  margin-right: 5px;
+  line-height: 24px;
+  font-size: 12px;
+}
+.main2 .center-1 > .toggle > .goodEvaluation > .select-comment > .select-comment2 {
+  text-align: right;
+}
+.main2 .center-1 > .toggle > .goodEvaluation > .select-comment > .select-comment2 input {
+  margin-right: 3px;
+  line-height: 24px;
+  margin-top: 0;
+}
+.main2 .center-1 > .toggle > .goodEvaluation > .select-comment > .select-comment2 em {
+  font-size: 12px;
+  color: #404040;
+}
+.main2 .center-1 > .toggle > .goodEvaluation > .select-comment > .select-comment2 > .default {
+  background-position: 64px 8px;
+  display: inline-block;
+  cursor: default;
+  height: 20px;
+  line-height: 20px;
+  width: 81px;
+  border: 1px solid #c8c8c8;
+  font-size: 12px;
+  box-sizing: content-box;
+  text-align: center;
+  position: relative;
+}
+.main2 .center-1 > .toggle > .goodEvaluation > .select-comment > .select-comment2 > .default > i {
+  font-size: 12px;
+}
+.main2 .center-1 > .toggle > .goodEvaluation > .select-comment > .select-comment2 > .default > .default2 {
+  width: 81px;
+  height: 43px;
+  border: 1px solid #c8c8c8;
+  background: whitesmoke;
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  top: 21px;
+  left: 0;
+}
+.main2 .center-1 > .toggle > .goodEvaluation > .select-comment > .select-comment2 > .default:hover .default2 {
+  display: block;
 }
 .main2 .center-1 > .toggle > .goodAftersales {
   width: 100%;
-  height: 500px;
-  background: #4d3108;
+}
+.main2 .center-1 > .toggle > .goodAftersales > .serve {
+  border: 1px solid #e5e5e7;
+  margin: 0 0 20px;
+  height: 130px;
+}
+.main2 .center-1 > .toggle > .goodAftersales > .serve > dl {
+  float: left;
+  padding: 26px 0 0;
+  width: 260px;
+  height: 104px;
+  border-right: 1px solid #e5e5e7;
+  box-sizing: content-box;
+}
+.main2 .center-1 > .toggle > .goodAftersales > .serve > dl > dt {
+  float: left;
+  width: 86px;
+  height: 68px;
+  border-right: 1px solid #e6e6e6;
+  text-align: center;
+  font-size: 12px;
+}
+.main2 .center-1 > .toggle > .goodAftersales > .serve > dl > dt > span {
+  display: block;
+  margin: 5px auto 0;
+  width: 30px;
+  height: 26px;
+  background: url(http://img-tmdetail.alicdn.com/tps/i1/T1ome2XkBXXXXXXXXX-292-139.png) no-repeat;
+}
+.main2 .center-1 > .toggle > .goodAftersales > .serve > dl > dd {
+  float: left;
+  width: 135px;
+  padding: 0 0 0 15px;
+  font-size: 12px;
+  color: #404040;
+  line-height: 25px;
+}
+.main2 .center-1 > .toggle > .goodAftersales > .serve > .tgfp span {
+  background-position: -36px 0;
+}
+.main2 .center-1 > .toggle > .goodAftersales > .serve > .stth span {
+  background-position: -74px 0;
+}
+.main2 .center-1 > .toggle > .goodAftersales > .promise {
+  border: 1px solid #e5e5e7;
+  margin: 0 0 20px;
+}
+.main2 .center-1 > .toggle > .goodAftersales > .promise > h5 {
+  margin-top: 20px;
+  height: 35px;
+  margin: 40px 20px 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #e5e5e7;
+  background: url(http://img-tmdetail.alicdn.com/tps/i1/T1ome2XkBXXXXXXXXX-292-139.png) no-repeat;
+  background-position: 50% -28px;
+}
+.main2 .center-1 > .toggle > .goodAftersales > .promise > ul {
+  font-size: 12px;
+  margin-left: 40px;
+}
+.main2 .center-1 > .toggle > .goodAftersales > .promise > .h5-2 {
+  background-position: 50% -65px;
+}
+.main2 .center-1 > .toggle > .goodAftersales > .promise > p img {
+  margin: 10px auto;
+  display: block;
+}
+.main2 .center-1 > .toggle > .goodAftersales > .promise > .h5-3 {
+  background-position: 50% -100px;
+}
+.main2 .center-1 > .toggle > .goodAftersales > .promise > dl {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 30px 0 0 36px;
+}
+.main2 .center-1 > .toggle > .goodAftersales > .promise > dl > li {
+  line-height: 25px;
+  font-size: 12px;
+  list-style-type: disc;
+  font-weight: 400;
+}
+.main2 .center-1 > .toggle > .goodAftersales > .safety-warning {
+  clear: both;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #ffffe5;
+  border: 1px solid #ffcc7f;
+}
+.main2 .center-1 > .toggle > .goodAftersales > .safety-warning dl {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ffe8ca;
+  padding-left: 68px;
+}
+.main2 .center-1 > .toggle > .goodAftersales > .safety-warning dl dt {
+  display: inline;
+  float: left;
+  width: 68px;
+  margin-left: -68px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.main2 .center-1 > .toggle > .goodAftersales > .safety-warning dl dd {
+  font-size: 12px;
+  line-height: 24px;
+}
+.main2 .center-1 > .toggle > .goodAftersales > .safety-warning dl dd > i {
+  font-size: 20px;
+  background-color: #d68f0a;
+  color: white;
+}
+.main2 .center-1 > .toggle > .goodAftersales > .safety-warning dl dd > a {
+  color: #999;
+  text-decoration: none;
+}
+footer {
+  width: 100%;
+  border-top: 1px solid #D1D7DC;
+}
+footer > .foottop {
+  width: 1190px;
+  height: 100px;
+  background: url(http://img.alicdn.com/tfs/TB14dANRXXXXXbdXXXXXXXXXXXX-1190-100.jpg) no-repeat;
+  margin: 25px auto;
+}
+footer > .foottop > a {
+  float: left;
+  display: block;
+  width: 297px;
+  height: 100px;
+}
+footer .footmain {
+  width: 1190px;
+  padding-top: 22px;
+  height: 190px;
+  margin: auto;
+  border-top: 1px solid #ededed;
+  background: url(data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAAAZCAMAAAC/3XipAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABdFBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDAxZWVmhoaG/v7+7u7u3t7eFhYU0NDQBAQFmZmbo6Oj////w8PAtLS2NjY24uLgnJycDAwOmpqZvb2/b29v09PRFRUVubm6np6cEBASXl5f29vZzc3MxMTEwMDB0dHSZmZk/Pz/Nzc0CAgIoKChAQEDDw8OAgIDv7+9TU1N/f38aGhr+/v5aWlrLy8uoqKhSUlJBQUGxsbHi4uLg4OBqamo3Nzf6+voiIiI2NjZjY2M8PDysrKzz8/P39/cFBQXy8vKtra07OztkZGRERERGRka2trbU1NRgYGBhYWHT09MJCQllZWXV1dV4eHh6enr19fWcnJyRkZEGBgYuLi4HBwd24IQCAAAAJXRSTlMAA2PD7um8WQEKurKksbCPMGaA+kA+tewkzd4c3d/iL+D5lU03tZLoQgAAAAFiS0dEMdnbHXIAAAHWSURBVDjLrZH5OwJRFIYnUrKWnQjVFSblVtYiS0j2fc2+72T3z7vnaOpOJmY8zi+955y+d+7MFQRdTq4+z2DMF7RWvtGQp8/N0TE0FRCsQpNGh6nwK1jAgkUkWcU6TQ5diRQsEgSSqlJNktJ00MxJiEWDw8LlynhJeYVqR2U5l6viJaS6RqWjppqP1cokpM6qymGtl6Ua5BJia1ThaLTJQ00ZEtJsdzjNP5XTYW8mv0j+Uv8uaXG1trWL7o5fIh1usb2t1dWiJPF4O6nPTwKUdnX/oOgWKQ0Qv492ej3fJD29lNI+9ttPaTCU1REKUtrfQ8gA+/dgOFMyxKbDcMQRgNEsjsgw247BqwOMZ0gm2IyKeF6g6KSiwxOFZQxQBJqSS6ZhNoM4CzinKJmDlQ9xHnBaJllYhNkS8jLgiqJkBVbLiC5AusBLVnG0hrwOuKEo2YTVOuIaJlZ5yRaOtpEHAeNSbicSiexITTx9yF1MbPGSPRztIx8AHiZj4SPWHB0nuxNYnSKeYeKcl1zg6BL5CvBaevgNa26l5i51h+QSExe85D4IowfkBGAg9R0e6VOKA7BKID4APt/LrvgFZq9Ab/Dii+/prxlLox8uMf4B+AqBl+QVfwLVX9WAqgikVgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNy0wMi0yMFQwOTo0NjoxNCswODowMHgr8vYAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTctMDItMjBUMDk6NDY6MTQrMDg6MDAJdkpKAAAAAElFTkSuQmCC) no-repeat 45px bottom;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footmain > dl > dt {
+  color: #646464;
+  font-size: 16px;
+  font-weight: 700;
+  height: 30px;
+  line-height: 30px;
+}
+footer .footmain > dl > dd {
+  font-size: 12px;
+  color: #646464;
+  line-height: 20px;
+}
+footer .footmain > dl > div img {
+  width: 105px;
+  height: 105px;
+}
+.foot1 {
+  border-top: 2px solid #FF0036;
+  background: #000;
+  text-align: left;
+  min-height: 177px;
+}
+.foot1 > .p1 {
+  width: 1190px;
+  margin: 0 auto;
+  line-height: 25px;
+}
+.foot1 > .p1 > a {
+  margin-right: 3px;
+  color: #fff;
+  font-size: 12px;
+}
+.foot1 > .p2 {
+  width: 1190px;
+  margin: 0 auto;
+  color: #fff;
+  line-height: 25px;
+  padding: 5px 0;
+}
+.foot1 > .p2 > a {
+  margin-right: 3px;
+  color: #fff;
+  font-size: 12px;
+}
+.foot1 > .d1 {
+  width: 1190px;
+  margin: 0 auto;
+  color: #a4a4a4;
+  line-height: 20px;
+  font-size: 12px;
+}
+.foot1 > .d2 {
+  padding-bottom: 20px;
+}
+.foot1 > .d2 > img {
+  width: 146px;
+  height: 71px;
+  display: block;
+  margin: 0 auto;
+  background: white;
 }
