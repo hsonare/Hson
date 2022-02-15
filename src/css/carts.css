@@ -34,8 +34,9 @@ a:hover{
     min-width: 1200px;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0px 0px 100px;
+    padding: 0px 0px 50px;
     min-height: 210px;
+    font-size: 12px;
 }
 /*购物车头部*/
 .cartMain_hd{
@@ -269,7 +270,7 @@ a:hover{
 .bar-wrapper{
     width: 1200px;
     height: 50px;
-    position: fixed;
+    /* position: fixed; */
     bottom: -1px;
     z-index: 99;
     background: #e5e5e5;
@@ -353,7 +354,7 @@ a:hover{
     margin-left: -200px;
     z-index: 9999;
     width: 360px;
-    height: 120px;
+    height: 140px;
     border: 1px solid #aeaeae;
     border-radius: 3px;
     padding: 20px;

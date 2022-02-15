@@ -36,8 +36,8 @@ window.onload = function(){
 
     console.log(ssf.children);
     for(let i = 0 ; i < ssf.children.length ; i++){
-        console.log(ssf.children[2]);
-        console.log(ssf.offsetWidth);
+        // console.log(ssf.children[2]);
+        // console.log(ssf.offsetWidth);
 
         ssf.children[1].onmouseover = function(){
             sst.style.width = '142px'
@@ -76,5 +76,32 @@ window.onload = function(){
     },20);
     
     }}
+
+
+
+    window.onscroll = function(){
+        // console.log( document.documentElement.scrollHeight);
+        // console.log( document.documentElement.scrollTop);
+        // console.log( document.documentElement.clientHeight);
+
+        let distance = document.documentElement.scrollHeight - document.documentElement.scrollTop - document.documentElement.clientHeight;
+        console.log(distance);
+
+        let footer = document.querySelector('footer');
+        console.log(footer.offsetHeight);
+
+        let bar = document.querySelector('.bar-wrapper');
+        console.log(bar.style.position);
+
+        if(distance>footer.offsetHeight){
+            bar.style.position = 'fixed'
+            console.log('大于');
+
+        }else{
+            bar.style.position = 'absolute'
+            console.log('小于');
+
+        }
+    }
 
 }
