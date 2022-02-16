@@ -7,7 +7,7 @@
   <title>product details</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/product-details.css">
+    <link rel="stylesheet" href="./css/item.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_2983392_smfer6l2gv.css">
     <!-- 以下为swiper -->
@@ -1616,34 +1616,34 @@
   <main>
     <!-- 放大镜 -->
     <div class="magnifier">
+      
       <div class="exzoom" id="exzoom"> 
-        <!--大图区域-->
+        <!-- 大图区域 -->
         <div class="exzoom_img_box">
       <ul class='exzoom_img_ul'>
-            <li><img src="./img/big (5).jpg"/></li>
-            <li><img src="./img/big (3).jpg"/></li>
-            <li><img src="./img/big (2).jpg"/></li>
-            <li><img src="./img/big (4).jpg"/></li>
+            <li id="img1" ><img src="./img/big (5).jpg"/></li>
+            <li id="img2"><img src="./img/big (3).jpg"/></li>
+            <li id="img3"><img src="./img/big (2).jpg"/></li>
+            <li id="img4"><img src="./img/big (4).jpg"/></li>
             <li><img src="./img/big (1).jpg"/></li>
             <li><img src="./img/big (5).jpg"/></li>
           </ul>
     </div>
-        <!--缩略图导航-->
+        <!-- 缩略图导航 -->
         <div class="exzoom_nav"></div>
         <!--控制按钮-->
-        <!-- <p class="exzoom_btn"> <a href="javascript:void(0);" class="exzoom_prev_btn"> &lt; </a> <a href="javascript:void(0);" class="exzoom_next_btn"> &gt; </a> </p> -->
+        <p class="exzoom_btn"> 
+          <!-- <a href="javascript:void(0);" class="exzoom_prev_btn"> &lt; </a> 
+          <a href="javascript:void(0);" class="exzoom_next_btn"> &gt; </a>  -->
+        </p>
       </div>
   <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script> 
-  <script src="./js/jquery.放大镜.js"></script> 
-  <script type="text/javascript">
-        $("#exzoom").exzoom({
-            autoPlay: false,
-        });//方法调用，务必在加载完后执行
-    </script>
+  <div id="fangdajing">
+  </div>
     </div>
     <div class="buy">
       <div class="h1h1">
-        <h1>
+        <h1 id="title">
           包邮三只松鼠蒸蛋糕520gX1箱面包早餐糕点网红食品休闲零食年货
         </h1>
       </div>
@@ -1654,7 +1654,7 @@
         <b>
           ￥
         </b>
-        <em>
+        <em id="price">
           29.90
         </em>
         <i>
@@ -1735,7 +1735,9 @@
           件
         </span>
         <span class="in-stock">
-          库存160件
+          库存
+          <i id="num">160</i>
+          件
         </span>
         <span class="purchase-limit">
           （每人限购5件）
@@ -1834,7 +1836,7 @@
           </div>
           <!-- 导航等组件可以放在Swiper容器之外 -->
           </div>
-          <div class="main-img">
+          <div class="main-img" id="detall">
             <img src="https://img.alicdn.com/imgextra/i4/2200811855231/O1CN01BE505E1oVqUIxXOFG_!!2200811855231-0-scmitem6000.jpg" alt="">
             <img src="https://img.alicdn.com/imgextra/i2/3596645335/O1CN01Ki37wZ1pHTceAlXQW_!!3596645335-0-scmitem6000.jpg" alt="">
             <img src="https://img.alicdn.com/imgextra/i1/3596645335/O1CN01NC1lCf1pHTccQdUPk_!!3596645335-0-scmitem6000.jpg" alt="">
@@ -2110,6 +2112,12 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
   integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 <script src="./js/quantity.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="./js/item.js"></script>
+
+
+
+
 <!-- banner图设置 -->
 <script>        
   var mySwiper = new Swiper ('.swiper', {

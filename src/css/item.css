@@ -899,7 +899,7 @@ main > .buy > .way {
   position: absolute;
   font-size: 12px;
   top: 400px;
-  left: 463px;
+  left: 442px;
   z-index: 1;
   cursor: pointer;
 }
@@ -959,7 +959,7 @@ main > .buy > .way-father > span i {
   color: #35a;
 }
 .main2 .center-1 > ul > .active {
-  border-top: 2px solid #FF0036;
+  border-top: 1px solid #FF0036;
   border-left: 1px solid #cfbfb1;
   border-right: 1px solid #cfbfb1;
 }

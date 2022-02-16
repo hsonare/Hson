@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/login.css">
   <link rel="stylesheet" href="http://at.alicdn.com/t/font_2983392_ve5x7hqw7i.css">
+  <link rel="stylesheet" href="./css/login_ercode.css">
 </head>
 
 <body>
@@ -26,15 +27,203 @@
       <a href=""></a>
       <!-- 表单 -->
       <div class="login">
-        <div class="triangle">
+        <div class="signContent">
+          <div class="signContainer">
+              <form action="" class="loginForm" id="form_key" data-module="smsFrom" onsubmit="return checkForm()">
+                  <!-- tab -->
+                  <div class="tabBox">
+                      <div class="tabBoxSwitch">
+                          <ul class="tabBoxSwitchUl">
+                              <li class="tab-active" data-id="0">免密码登录</li>
+                              <li data-id="1">密码登录</li>
+                          </ul>
+                          <div class="ercode_tab swicth-ercode">
+                              <svg width="52" height="52" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  fill="currentColor">
+                                  <defs>
+                                      <path id="id-3938311804-a" d="M0 0h48a4 4 0 0 1 4 4v48L0 0z"></path>
+                                  </defs>
+                                  <g fill="none" fill-rule="evenodd">
+                                      <mask id="id-3938311804-b" fill="#fff">
+                                          <use xlink:href="#id-3938311804-a"></use>
+                                      </mask>
+                                      <use fill="#dd2726" xlink:href="#id-3938311804-a"></use>
+                                      <image width="52" height="52" mask="url(#id-3938311804-b)"
+                                          xlink:href="./img/house2.png">
+                                      </image>
+                                      <!-- <a href="" class="icon-erweima iconfont" style="display: inline-block;width:52px;height:52px"></a> -->
+                                  </g>
+                              </svg>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- tabContent -->
+                  <div class="tabContent">
+                      <!-- tabContentPhone -->
+                      <div class="tabcont  tabContentPhone active">
+                          <div class="tabcontent">
+                              <div class="phoneBox">
+                                  <div class="phoneGroup">
+                                      <button class="phone-btn selectBtn" type="button" data-type="selected">
+                                          <span>中国 +86</span>
+                                          <svg class="Zi--Select Select-arrow" fill="currentColor"
+                                              viewBox="0 0 24 24">
+                                              <path
+                                                  d="M12 16.183l2.716-2.966a.757.757 0 0 1 1.064.001.738.738 0 0 1 0 1.052l-3.247 3.512a.758.758 0 0 1-1.064 0L8.22 14.27a.738.738 0 0 1 0-1.052.758.758 0 0 1 1.063 0L12 16.183zm0-9.365L9.284 9.782a.758.758 0 0 1-1.064 0 .738.738 0 0 1 0-1.052l3.248-3.512a.758.758 0 0 1 1.065 0L15.78 8.73a.738.738 0 0 1 0 1.052.757.757 0 0 1-1.063.001L12 6.818z"
+                                                  fill-rule="evenodd"></path>
+                                          </svg>
+                                      </button>
+                                  </div>
+                                  <div class="selectConentent">
+                                      <div class="selectOptions">
+                                      </div>
+                                  </div>
+                              </div>
+                              <span class="line-show"></span>
+                              <div class="phoneInputGroup">
+                                  <label for="" class="inputLabel phoneLabel">
+                                      <input type="text" value="" name="" id="phoneInput"
+                                          class="inputStyle phoneInput" placeholder="手机号" autocomplete="off">
+                                  </label>
+                              </div>
+                          </div>
+                          <div class="tabcontent">
+                              <div class="phoneInputGroup">
+                                  <label for="" class="inputLabel">
+                                      <input type="number" value="" name="" id="msgInput"
+                                          class="inputStyle msgInput" placeholder="输入 6 位短信验证码"
+                                          autocomplete="off">
+                                  </label>
+                              </div>
+                              <div class="phoneGroup">
+                                  <button class="phone-btn msgBtn" type="button">
+                                      获取短信验证码
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- tabContentAccount -->
+                      <div class="tabcont tabContentAccount">
+                          <div class="tabcontent">
+                              <div class="login-out-phoneBox">
+                                  <div class="phoneBox">
+                                      <div class="phoneGroup">
+                                          <button class="phone-btn selectBtn" type="button"
+                                              data-type="selected">
+                                              <span>中国 +86</span>
+                                              <svg class="Zi--Select Select-arrow" fill="currentColor"
+                                                  viewBox="0 0 24 24">
+                                                  <path
+                                                      d="M12 16.183l2.716-2.966a.757.757 0 0 1 1.064.001.738.738 0 0 1 0 1.052l-3.247 3.512a.758.758 0 0 1-1.064 0L8.22 14.27a.738.738 0 0 1 0-1.052.758.758 0 0 1 1.063 0L12 16.183zm0-9.365L9.284 9.782a.758.758 0 0 1-1.064 0 .738.738 0 0 1 0-1.052l3.248-3.512a.758.758 0 0 1 1.065 0L15.78 8.73a.738.738 0 0 1 0 1.052.757.757 0 0 1-1.063.001L12 6.818z"
+                                                      fill-rule="evenodd"></path>
+                                              </svg>
+                                          </button>
+                                      </div>
+                                      <div class="selectConentent">
+                                          <div class="selectOptions">
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <span class="line-show"></span>
+                              </div>
+
+                              <div class="phoneInputGroup">
+                                  <label for="" class="inputLabel phoneLabel">
+                                      <input type="text" value="" name="" id="accountUser"
+                                          class="inputStyle accountUsername" placeholder="手机号或邮箱"
+                                          autocomplete="off">
+                                  </label>
+                              </div>
+                          </div>
+                          <div class="tabcontent">
+                              <div class="phoneInputGroup">
+                                  <label for="" class="inputLabel phoneLabel">
+                                      <input type="password" value="" name="" id="accountpwd"
+                                          class="inputStyle accountPwd" placeholder="密码" autocomplete="off">
+                                  </label>
+
+                              </div>
+                              <button tabindex="-1" type="button" class="button SignFlow-switchPassword">
+                                  <span style="display: inline-flex; align-items: center;">​
+                                      <svg class="Zi Zi--Eye Button-zi" fill="currentColor"
+                                          viewBox="0 0 24 24" width="1.2em" height="1.2em">
+                                          <path
+                                              d="M1 11.5C1 15 7 19 12 19s11-4 11-7.5S17 4 12 4 1 8 1 11.5zm11 5c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm-3-5c0 1.66 1.34 3 3 3s3-1.34 3-3-1.34-3-3-3-3 1.34-3 3z"
+                                              fill-rule="evenodd">
+                                          </path>
+                                      </svg>
+                                  </span>
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- loginbox -->
+                  <div class="login_box">
+                      <button type="button" class="phone-btn out-login-btn-shw out-login-btn SignFlow-switchLogin"
+                          data-btn="out-login-btn" data-clilck="isClick">海外手机登录</button>
+                      <!-- <button type="button" class="phone-btn voice-btn sms-voice-btn" data-btn="sms-voice-btn"
+                          data-forV="forget-voice">接收语音验证码</button> -->
+                  </div>
+                  <button id="submit" type="submit" class="button fromSubmit"
+                      data-type="smsSubmit">注册/登录</button>
+                  <!-- tips -->
+                  <div class="SignContainer-tip">
+                      <div>
+                          <div>未注册手机验证后自动登录，注册即代表同意<a href="#">天猫</a><a href="#">《隐私保护指引》</a></div>
+                      </div>
+                  </div>
+              </form>
+              <!-- ercodeSgin -->
+              <div class="ercodeSignBox">
+                  <div class="ercode_tab switch-input">
+                      <svg width="52" height="52" xmlns:xlink="http://www.w3.org/1999/xlink"
+                          fill="currentColor">
+                          <defs>
+                              <path id="id-14580708-a" d="M0 0h48a4 4 0 0 1 4 4v48L0 0z"></path>
+                          </defs>
+                          <g fill="none" fill-rule="evenodd">
+                              <mask id="id-14580708-b" fill="#fff">
+                                  <use xlink:href="#id-14580708-a"></use>
+                              </mask>
+                              <use fill="#0084FF" xlink:href="#id-14580708-a"></use>
+                              <path fill="#FFF"
+                                  d="M22.125 4h13.75A4.125 4.125 0 0 1 40 8.125v27.75A4.125 4.125 0 0 1 35.875 40h-13.75A4.125 4.125 0 0 1 18 35.875V8.125A4.125 4.125 0 0 1 22.125 4zm6.938 34.222c1.139 0 2.062-.945 2.062-2.11 0-1.167-.923-2.112-2.063-2.112-1.139 0-2.062.945-2.062 2.111 0 1.166.923 2.111 2.063 2.111zM21 8.333v24h16v-24H21z"
+                                  mask="url(#id-14580708-b)"></path>
+                              <g mask="url(#id-14580708-b)">
+                                  <path fill="#FFF"
+                                      d="M46.996 15.482L39 19.064l-7.996-3.582A1.6 1.6 0 0 1 32.6 14h12.8a1.6 1.6 0 0 1 1.596 1.482zM47 16.646V24.4a1.6 1.6 0 0 1-1.6 1.6H32.6a1.6 1.6 0 0 1-1.6-1.6v-7.754l8 3.584 8-3.584z">
+                                  </path>
+                                  <path fill="#0084FF" d="M31 15.483v1.17l8 3.577 8-3.577v-1.17l-8 3.581z"
+                                      fill-rule="nonzero"></path>
+                              </g>
+                          </g>
+                      </svg>
+                  </div>
+                  <!-- ercodeConent -->
+                  <div class="ercodeContent">
+                      <div class="Qrcode-title">扫码登录</div>
+                      <div class="ercodeBox">
+                          <div class="Qrcode-img" id="qrcode">
+                              <!-- <img width="150" height="150" src="../img/image.png" alt="二维码"> -->
+                          </div>
+                          <p>打开<a href="#" target="_blank" rel="noopener noreferrer">
+                                  天猫 App</a></p>
+                          <p>在「我的」页面右上角打开扫一扫</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+        <!-- <div class="triangle">
         </div>
         <i class="iconfont icon-erweima"></i>
         <div class="sweep">
           扫码登录更安全
-        </div>
+        </div> -->
         <!-- 定位旋转小角 -->
-        <div class="rotate">
-        </div>
+        <!-- <div class="rotate">
+        </div> -->
       </div>
     </div>
   </main>
@@ -105,3 +294,5 @@
   integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
   integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  <script src="./js/login.js"></script>
+  <script src="./js/qrcode.js"></script>
