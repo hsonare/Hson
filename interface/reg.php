@@ -8,7 +8,7 @@
 
 
   // 1. 连接数据库
-  include('./library/conn.php');
+  include('./library/conn copy.php');
   // 2. 接收数据
   $username = $_REQUEST['username'];
   $password = $_REQUEST['password'];
@@ -22,7 +22,7 @@
   $results = $mysql->query($sql1);
 
   if($results->num_rows>0){
-    echo '<script>alert("注册失败!")</script>';
+    echo '<script>alert("登录成功");</script>';
     echo '<script>location.href="../src/reg.html";</script>';
     $mysql->close();
     die(); // 用户名已存在 结束代码执行

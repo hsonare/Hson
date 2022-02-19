@@ -32,7 +32,7 @@
   // 没有查找到结果 说明用户名或密码错误  ——> 登录失败
 
   // 1. 连接数据库
-  include('./library/conn.php'); // 加载一个php文件
+  include('./library/conn copy.php'); // 加载一个php文件
 
   // 2. 接收数据
   $username = $_REQUEST['username'];
@@ -49,7 +49,7 @@
 
   if($results->num_rows>0){
     echo '<script>alert("登录成功");</script>';
-    echo '<script>location.href="https://www.baidu.com";</script>';
+    echo '<script>location.href="../src/index.html";</script>';
   }else{
     echo '<script>alert("登录失败");</script>';
     echo '<script>location.href="../eg02.login.html";</script>';
