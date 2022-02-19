@@ -1,0 +1,108 @@
+header {
+  width: 1190px;
+  height: 50px;
+  margin: 0 auto;
+  padding: 22px 0;
+  margin-bottom: 22px;
+}
+header > div > img {
+  width: 190px;
+}
+main {
+  width: 100%;
+  background-color: #dd2726;
+}
+main > .center {
+  width: 1190px;
+  margin: 0 auto;
+  position: relative;
+}
+main > .center > a {
+  width: 600px;
+  height: 500px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+main > .center > .login {
+  width: 450px;
+  min-height: 450px;
+  position: absolute;
+  top: 80px;
+  right: 70px;
+}
+main > .center > .login > h1 {
+  font-size: larger;
+  text-align: center;
+  line-height: 20px;
+  color: #dd2726;
+  padding: 15px 0;
+  border: #666 solid 1px;
+  font-weight: 900;
+  background: whitesmoke;
+  margin: 0 auto;
+  width: 321px;
+  margin-bottom: 15px;
+}
+main > .center > .login > form {
+  margin: 0 auto;
+  display: block;
+  width: 321px;
+}
+main > .center > .login > form > div {
+  width: 315px;
+  height: 35px;
+  border: 3px #dd2726 solid;
+  border-bottom: none;
+  line-height: 35px;
+  background: whitesmoke;
+}
+main > .center > .login > form > div > input {
+  width: 278px;
+}
+main > .center > .login > form > span {
+  display: block;
+  text-align: center;
+}
+main > .center > .login > form > span .btn {
+  width: 60px;
+  height: 30px;
+  display: inline-block;
+  margin-top: 20px;
+}
+footer {
+  width: 100%;
+  background: #fff;
+}
+footer > .foot {
+  width: 1190px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+footer > .foot > .p1 {
+  line-height: 25px;
+  font-size: 12px;
+}
+footer > .foot > .p1 > a {
+  color: #000;
+  margin-right: 3px;
+}
+footer > .foot > .p2 {
+  line-height: 25px;
+  font-size: 12px;
+}
+footer > .foot > .p2 > a {
+  color: #000;
+  margin-right: 3px;
+}
+footer > .foot > .d1 > span {
+  color: #666;
+  line-height: 20px;
+  font-size: 12px;
+}
+footer > .foot > .d1 > a {
+  color: #999;
+  line-height: 20px;
+  font-size: 12px;
+}
